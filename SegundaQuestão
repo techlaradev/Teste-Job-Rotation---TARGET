@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int numero, a = 0, b = 1, c = 0, pertence = 0;
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    
+    while (c < numero) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    
+    if (c == numero) {
+        pertence = 1;
+    }
+    
+    if (pertence) {
+        printf("%d pertence à sequência de Fibonacci.\n", numero);
+    } else {
+        printf("%d não pertence à sequência de Fibonacci.\n", numero);
+    }
+    
+    return 0;
+}
