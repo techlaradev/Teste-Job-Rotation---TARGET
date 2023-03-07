@@ -1,0 +1,19 @@
+
+import pandas as pd
+
+df = pd.read_json('dados.json')
+
+print("Menor valor:")
+print("-"*30)
+print(df[df[["valor"]] > 0].min())
+print("-"*30)
+
+print("Maior valor:")
+print("-"*30)
+print(df[df[["valor"]] > 0].max())
+print("-"*30)
+
+print("Média dos valores:")
+print("-"*30)
+print(df[df[["valor"]] > 0].mean())
+print("-"*30)
