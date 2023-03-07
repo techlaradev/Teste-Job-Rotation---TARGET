@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    // Faturamento mensal por estado
+    float sp = 67836.43;
+    float rj = 36678.66;
+    float mg = 29229.88;
+    float es = 27165.48;
+    float outros = 19849.53;
+
+    // Total faturado no mês
+    float total = sp + rj + mg + es + outros;
+
+    // Cálculo do percentual de representação de cada estado
+    float sp_perc = (sp / total) * 100;
+    float rj_perc = (rj / total) * 100;
+    float mg_perc = (mg / total) * 100;
+    float es_perc = (es / total) * 100;
+    float outros_perc = (outros / total) * 100;
+
+    // Impressão dos resultados
+    printf("Percentual de representação do faturamento mensal por estado:\n");
+    printf("SP: %.2f%%\n", sp_perc);
+    printf("RJ: %.2f%%\n", rj_perc);
+    printf("MG: %.2f%%\n", mg_perc);
+    printf("ES: %.2f%%\n", es_perc);
+    printf("Outros: %.2f%%\n", outros_perc);
+
+    return 0;
+}
